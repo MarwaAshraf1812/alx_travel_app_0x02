@@ -17,3 +17,8 @@ class BookingViewSet(viewsets.ModelViewSet):
     """
     queryset = Booking.objects.all()
     serializer_class = BookingSerializer
+
+class InitiatePaymentView(viewsets.ModelViewSet):
+    """
+    View for initiating a payment.
+    """
